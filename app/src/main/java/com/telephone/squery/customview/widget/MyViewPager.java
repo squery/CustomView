@@ -15,7 +15,7 @@ import android.view.ViewGroup;
  * 冲突描述： 当斜着滑动ViewPager的时候会触发 ListView的下拉刷新
  * 当 action_down 的时候 父控件是没有拦截的  传递到子view了
  * 这个时候 让父类不拦截move事件 getParent().requestDisallowInterceptTouchEvent(true);
- * 就可以传递到子View了 就可以让 down后的几个action了
+ * move事件就可以传递到子View了 就可以让 down后的几个action了
  */
 public class MyViewPager extends ViewPager {
     private ViewGroup parent;
